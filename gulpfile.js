@@ -62,7 +62,7 @@ gulp.task('build-scss', function() {
       browsers: ['last 3 versions', '> 5%']
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.cssin))
+    .pipe(gulp.dest(config.scssout))
     .pipe(livereload());
 });
 
